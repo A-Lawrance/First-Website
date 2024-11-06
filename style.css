@@ -1,89 +1,123 @@
 :root {
-    --primary-color: #0D47A1; /* Biru tua */
-    --accent-color: #2196F3; /* Biru muda */
-    --secondary-color: #BBDEFB; /* Biru muda pudar */
-    --background-color: #FAFAFA; /* Background putih abu-abu */
-    --text-color: #0D47A1; /* Warna teks biru tua */
-  }
-  
-  /* Background umum */
-  body {
-    background-color: var(--background-color);
-    font-family: Arial, sans-serif;
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Memusatkan konten secara horizontal */
-    align-items: center; /* Memusatkan konten secara vertikal */
-    height: 100vh; /* Membuat konten berada di tengah halaman */
-  }
+  --primary-color: #0D47A1; /* Dark blue */
+  --accent-color: #2196F3; /* Light blue */
+  --secondary-color: #BBDEFB; /* Faded light blue */
+  --background-color: #FAFAFA; /* Light gray background */
+  --text-color: #0D47A1; /* Text color dark blue */
+}
 
-  h1 {
-    background-color: #0D47A1;
-    color: #FAFAFA;
-    padding: 10px;
-  }
-  
-  /* Wrapper untuk konten utama */
-  .container {
-    text-align: center; /* Memusatkan teks */
-    max-width: 400px; /* Lebar maksimum konten */
-    padding: 27px;
-    padding-left: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  /* Gaya untuk h3 */
-  h3 {
-    color: var(--primary-color);
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Gaya untuk paragraf */
-  p {
-    font-size: 18px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
-  
-  /* Label */
-  label {
-    font-size: 16px;
-    color: var(--primary-color);
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  /* Input */
-  input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-    background-color: white;
-  }
-  
-  /* Tombol */
-  button {
-    background-color: var(--accent-color);
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: var(--primary-color);
-  }
-  
+/* General Background */
+body {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navbar Styling */
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  list-style-type: none;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  /* Removed flex: 1 for items to not stretch */
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #555;
+}
+
+/* Header */
+h1 {
+  background-color: var(--primary-color);
+  color: #FAFAFA;
+  padding: 10px;
+  margin: 50px;
+}
+
+/* Main Content Wrapper */
+.container {
+  text-align: center;
+  max-width: 400px;
+  padding: 27px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 5px solid black;
+}
+
+/* h3 Styling */
+h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Label */
+label {
+  font-size: 16px;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  background-color: white;
+}
+
+/* Button */
+button {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
